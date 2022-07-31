@@ -100,20 +100,24 @@ ul {
   padding: 32px 0px;
 }
 
-.icon:focus,
-.icon:hover {
+.contacts:focus,
+.contacts:hover {
   fill: var(--accents);
+}
+
+.envelop {
+  align-items: center;
 }
 
 .antenna {
   background-color: #f5f4fa;
   margin-bottom: 30px;
   padding: 0;
+  width: 270px;
+  height: 120px;
 }
 .icon-description {
   display: block;
-  background-position: center;
-  padding: 25px 105px;
 }
 
 h1,
@@ -265,39 +269,45 @@ p {
     0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
-.webs {
+.web {
   display: flex;
 }
-.webs .soc + .soc {
+.web .socc + .socc {
   margin-left: 10px;
+  background-position: center;
 }
 
-.soc {
+.social-web {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.socc {
   fill: #afb1b8;
-  padding-left: 22px;
   padding-top: 16px;
+  display: block;
+  align-items: center;
 }
 
-.soc:last-child {
-  padding-right: 0;
-}
-
-.social:hover,
-.social:focus {
-  border-radius: 100%;
+.social-web:hover,
+.social-web:focus {
+  border-radius: 50%;
   background-color: var(--accents);
   border: none;
   fill: #ffffff;
-  background-size: contain;
 }
 
 .clients-icon {
   border: 1px solid #afb1b8;
+  fill: #afb1b8;
 }
 
 .clients-icon:focus,
 .clients-icon:hover {
   border: 1px solid var(--accents);
+  fill: var(--accents);
 }
 
 .buttons {
@@ -379,6 +389,12 @@ p {
   display: block;
 }
 
+.work-names:hover,
+.work-names:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 0px 1px rgba(0, 0, 0, 0.12);
+}
+
 .type {
   font-weight: 400;
   font-size: 16px;
@@ -393,6 +409,11 @@ p {
   background: #2f303a;
   padding: 60px 0;
   display: flex;
+  align-items: center;
+}
+
+.blocks {
+  display: inline-block;
 }
 
 .logo-footer {
@@ -450,6 +471,11 @@ p {
   color: var(--accents);
 }
 
+.joins {
+  margin-left: 70px;
+  padding-bottom: 20px;
+}
+
 .join {
   font-family: Roboto;
   font-style: normal;
@@ -457,4 +483,34 @@ p {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+.webs {
+  display: flex;
+}
+.webs .soc + .soc {
+  margin-left: 10px;
+  background-position: center;
+}
+
+.social-webs {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.soc {
+  fill: #ffffff;
+  padding-top: 16px;
+  display: block;
+  align-items: center;
+}
+
+.social-webs:hover,
+.social-webs:focus {
+  border-radius: 50%;
+  background-color: var(--accents);
+  border: none;
+  fill: #ffffff;
 }
