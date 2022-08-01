@@ -107,14 +107,20 @@ ul {
 
 .envelop {
   align-items: center;
+  justify-content: center;
+  padding-right: 10px;
 }
 
 .antenna {
+  margin: 0;
   background-color: #f5f4fa;
   margin-bottom: 30px;
   padding: 0;
-  width: 270px;
   height: 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .icon-description {
   display: block;
@@ -255,6 +261,7 @@ p {
   font-size: 16px;
   line-height: 1.2;
   color: var(--contacts-color);
+  padding-bottom: 20px;
 }
 
 .team-title {
@@ -278,17 +285,27 @@ p {
 }
 
 .social-web {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
 
 .socc {
-  fill: #afb1b8;
-  padding-top: 16px;
+  fill: #ffffff;
   display: block;
   align-items: center;
+}
+
+.sociall {
+  fill: #afb1b8;
+}
+
+.sociall:focus,
+.sociall:hover {
+  fill: #ffffff;
 }
 
 .social-web:hover,
@@ -299,14 +316,26 @@ p {
   fill: #ffffff;
 }
 
-.clients-icon {
+.client-box {
+  width: 170px;
+  height: 92px;
   border: 1px solid #afb1b8;
+}
+
+.client-box:focus,
+.client-box:hover {
+  border: 1px solid var(--accents);
+}
+
+.clients-icon {
   fill: #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .clients-icon:focus,
 .clients-icon:hover {
-  border: 1px solid var(--accents);
   fill: var(--accents);
 }
 
@@ -382,17 +411,17 @@ p {
   padding-bottom: 4px;
 }
 
+.portfolioi-shadow:hover,
+.portfolioi-shadow:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 0px 1px rgba(0, 0, 0, 0.12);
+}
+
 .work-names {
   padding: 20px 24px;
   border: 1px solid #ececec;
   border-top: none;
   display: block;
-}
-
-.work-names:hover,
-.work-names:focus {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 0px 1px rgba(0, 0, 0, 0.12);
 }
 
 .type {
@@ -494,6 +523,9 @@ p {
 }
 
 .social-webs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -507,10 +539,13 @@ p {
   align-items: center;
 }
 
+.social {
+  fill: #ffffff;
+}
+
 .social-webs:hover,
 .social-webs:focus {
   border-radius: 50%;
   background-color: var(--accents);
   border: none;
-  fill: #ffffff;
 }
