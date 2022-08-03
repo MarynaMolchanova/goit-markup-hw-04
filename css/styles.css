@@ -96,8 +96,17 @@ ul {
   margin-left: 50px;
 }
 
+.envelop {
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+  fill: var(--contacts-color);
+}
+
 .contacts {
   padding: 32px 0px;
+  display: flex;
+  align-items: center;
 }
 
 .contacts:focus,
@@ -105,10 +114,9 @@ ul {
   fill: var(--accents);
 }
 
-.envelop {
-  align-items: center;
-  justify-content: center;
-  padding-right: 10px;
+.contacts:focus svg,
+.contacts:hover svg {
+  fill: var(--accents);
 }
 
 .antenna {
@@ -312,19 +320,28 @@ p {
 .social-web:focus {
   border-radius: 50%;
   background-color: var(--accents);
-  border: none;
-  fill: #ffffff;
+}
+
+.social-web:hover svg,
+.social-web:focus svg {
+  fill: var(--hero-and-footer-color);
 }
 
 .client-box {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 .client-box:focus,
 .client-box:hover {
   border: 1px solid var(--accents);
+}
+
+.client-box:focus svg,
+.client-box:hover svg {
+  fill: var(--accents);
 }
 
 .clients-icon {
@@ -337,6 +354,14 @@ p {
 .clients-icon:focus,
 .clients-icon:hover {
   fill: var(--accents);
+}
+
+.client-link {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .buttons {
